@@ -129,6 +129,10 @@ header h1 span {
 }
 
 @media (min-width:720px){
+    .mapContainer {
+        width: 590px;
+        height: 500px;
+    }
     #map {
         width: 590px;
         height: 500px;

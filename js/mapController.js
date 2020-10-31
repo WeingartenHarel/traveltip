@@ -193,6 +193,7 @@ window.onload = () => {
 }
 
 function resizeMap(){
+    if (window.innerWidth > 720 ) return
     var elMapContainer = document.querySelector('.mapContainer')
     var elMap =  document.querySelector('#map')
     console.log(elMapContainer.offsetWidth)

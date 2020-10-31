@@ -25,6 +25,7 @@ function renderWeather(res) {
 }
 
 function resizeWeather(){
+    if (window.innerWidth > 720 ) return
     var elWeatherContainer = document.querySelector('.map-weather')
     var elWeather =  document.querySelector('.weather-container')
     console.log(elWeatherContainer.offsetWidth)
