@@ -33,7 +33,8 @@ function renderLocations(){
        <span class="item">${locationItem.lng}</span>
        <span class="item">${locationItem.name}</span>
        <span class="item">${locationItem.createdAt}</span>
-       <button data-locid="${index}" class="deleteLocation"> delete </button>
+       <button data-locid="${index}" class="btn goLocation"> Go </button>
+       <button data-locid="${index}" class="btn deleteLocation"> Delete </button>
       
        </div></div>`;
       }); 
@@ -170,6 +171,7 @@ mapService.getLocs()
 window.onload = () => {
     initMap()
         .then(() => {
+            resizeMap()
             addMarker({ lat: 32.0749831, lng: 34.9120554 });
             addMapEventOnClick()
             renderLocations()
@@ -188,6 +190,14 @@ window.onload = () => {
             console.log('err!!!', err);
         })
 
+}
+
+function resizeMap(){
+    var elMapContainer = document.querySelector('.mapContainer')
+    var elMap =  document.querySelector('#map')
+    console.log(elMapContainer.offsetWidth)
+    elMap.style.width = elMapContainer.offsetWidth+'px';
+    elMap.style.height = elMapContainer.offsetWidth+'px';
 }
 
 function addMapEventOnClick(){
@@ -291,7 +301,8 @@ function getPosition() {
 
 function _connectGoogleApi() {
     if (window.google) return Promise.resolve()
-    const API_KEY = 'AIzaSyCy6hOuYH-4WoOK2wfJ14CVE1U8HW6Dp70'; //TODO: Enter your API Key
+    //const API_KEY = 'AIzaSyCy6hOuYH-4WoOK2wfJ14CVE1U8HW6Dp70'; //TODO: Enter your API Key
+    const API_KEY = 'AIzaSyDgJryCiZmw2VHVn94qncjVQ2SyMapG7Ps'; //TODO: Enter your API Key
     var elGoogleApi = document.createElement('script');
     elGoogleApi.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}`;
     elGoogleApi.async = true;

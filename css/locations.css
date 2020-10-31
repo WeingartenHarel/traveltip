@@ -24,7 +24,7 @@ span.item {
     padding: 7px;
 }
 
-button.deleteLocation {
+.btn.deleteLocation , .btn.goLocation {
     padding: 10px;
     font-size: 22px;
     color: #811411;
@@ -32,16 +32,56 @@ button.deleteLocation {
     outline: none;
     border: 2px solid #000;
     cursor: pointer;
+    margin: 5px 0;
 }
 
 button.deleteLocation:hover {
     color: #ea4335;
 }
 
+
+/****************** LOCATIONS *******************************/
+.locations-container{
+    margin-top:1rem; 
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+}
+
+@media(max-width:1201px){
+    .map-weather{
+        flex-direction: column;
+    }
+    header nav{
+        margin:auto;
+    }
+}
+
+@media (max-width:580px){
+    .input-location{
+        display:block;
+        margin:auto;
+    }
+    .input-location .search{
+        display:flex;
+        flex-direction: column;
+    }
+    .input-location .search button{
+        width:250px;
+        margin-top:.6rem;
+    }
+    .myloc-btn button{
+        width:250px;
+        margin-top: .6rem;
+        padding:0;
+    }
+}
+
 @media only screen and (min-width: 72px) {
     .locations{
         display: flex;  
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 

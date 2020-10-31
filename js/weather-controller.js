@@ -7,6 +7,7 @@ import { mapControler } from '/js/mapController.js';
 onInit();
 
 function onInit() {
+    resizeWeather();
     onGetCity();
 }
 
@@ -23,7 +24,13 @@ function renderWeather(res) {
     `;
 }
 
-
+function resizeWeather(){
+    var elWeatherContainer = document.querySelector('.map-weather')
+    var elWeather =  document.querySelector('.weather-container')
+    console.log(elWeatherContainer.offsetWidth)
+    elWeather.style.width = elWeatherContainer.offsetWidth+'px';
+    elWeather.style.height = elWeatherContainer.offsetWidth+'px';
+}
 
 function onGetCity() {
     var input = document.querySelector('.input');
@@ -32,6 +39,7 @@ function onGetCity() {
         var weather = weatherService.loadWeather(`${input.value}`)
         weather.then(res => {
             mapControler.showLocationFromInput(res);
+            
             return renderWeather(res);
         });
     })

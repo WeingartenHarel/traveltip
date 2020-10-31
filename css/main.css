@@ -68,9 +68,14 @@ header h1 span {
     margin:0
 }
 
+.mapContainer {
+    width: 100%;
+    height: auto;
+}
+
 #map{
-    width:590px;
-    height:500px;
+    width: 590px;
+    height: 500px;
 }
 
 /**************** INPUT LOCATION DIV ********************************/
@@ -123,37 +128,9 @@ header h1 span {
     color: rgb(250, 155, 12);
 }
 
-/****************** LOCATIONS *******************************/
-.locations-container{
-    margin-top:1rem; 
-    background-color: rgb(235, 235, 235);
-}
-
-@media(max-width:1201px){
-    .map-weather{
-        flex-direction: column;
-    }
-    header nav{
-        margin:auto;
-    }
-}
-
-@media (max-width:580px){
-    .input-location{
-        display:block;
-        margin:auto;
-    }
-    .input-location .search{
-        display:flex;
-        flex-direction: column;
-    }
-    .input-location .search button{
-        width:250px;
-        margin-top:.6rem;
-    }
-    .myloc-btn button{
-        width:250px;
-        margin-top: .6rem;
-        padding:0;
+@media (min-width:720px){
+    #map {
+        width: 590px;
+        height: 500px;
     }
 }
