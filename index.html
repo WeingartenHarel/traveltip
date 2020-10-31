@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/locations.css">
+</head>
+
+<body>
+    <header class="max-width">
+        <nav>
+            <h1><span>Travel</span>Tip</h1>
+        </nav>
+    </header>
+    <div class="container max-width">
+
+        
+        <div class="input-location">
+            <div class="search">
+            <input type="text" class="input">
+            <button>GO</button>
+            </div>
+            <div class="myloc-btn">
+            <button class="btn">My Location</button>
+            </div>
+        </div>
+
+        <div class="map-weather">
+    <div class="map">
+        <div id="map"></div>
+    </div>
+
+
+    <div class="weather-container">
+        <h1>Weather Today</h1>
+        <!-- <p class="loading">Loading...</p> -->
+    </div>
+        </div>
+
+
+
+        
+        
+
+
+        <div class="locations-container max-width">
+            <h1>Last Locations</h1>
+        <div class="locations">
+            
+        </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="lib/axios.js"></script>
+    <script type="module" src="js/util-service.js"></script>
+    <script type="module" src="js/storage-service.js"></script>
+    <script type="module" src="js/weather-service.js"></script>
+    <script type="module" src="js/mapService.js"></script>
+    <script type="module" src="js/weather-controller.js"></script>
+    <script type="module" src="js/mapController.js"></script>
+</body>
+
+</html>
