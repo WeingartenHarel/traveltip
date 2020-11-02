@@ -21,7 +21,7 @@ function loadWeather(cityName) {
     //     console.log('loading weather from local storage');
     //     return gWeather;
     // }
-    return axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${WEATHER_KEY}`)
+    return axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${WEATHER_KEY}`)
         .then(res => {
             // gWeather = res.data;
             // _saveToStorage();
