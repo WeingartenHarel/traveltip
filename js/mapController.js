@@ -1,8 +1,9 @@
-import { mapService } from '/js/mapService.js'
+import { mapService } from '/js/mapService.js' ///fix
 import { UTIL } from '/js/util-service.js'
 import { storage } from '/js/storage-service.js'
 import {weatherService} from '/js/weather-service.js';
-   
+
+    
 export const mapControler = {showLocationFromInput}
 
 
