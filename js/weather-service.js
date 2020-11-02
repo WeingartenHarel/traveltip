@@ -1,6 +1,6 @@
 'use strict';
 
-import { storage } from '/js/storage-service.js';
+import { storage } from './storage-service.js';
 
 const STORAGE_KEY = 'weatherDB';
 // var gWeather = [];
