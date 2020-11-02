@@ -6,7 +6,7 @@ const STORAGE_KEY = 'weatherDB';
 // var gWeather = [];
 const WEATHER_KEY = 'e48b3fe16da4980e38b80f60905d8892'
 
-
+// https://api.openweathermap.org/data/2.5/weather?q=moscow&units=metric&appid=e48b3fe16da4980e38b80f60905d8892
 
 // console.log(gWeather);
 // console.log(loadWeather('tel-aviv'));

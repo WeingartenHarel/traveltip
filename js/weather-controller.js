@@ -20,6 +20,7 @@ function onInit() {
 function renderWeather(res) {
     // document.querySelector('.loading').style.display = 'none';
     var elWeather = document.querySelector('.weather-container');
+   //https 
     elWeather.innerHTML = `
     <div><img src="https://openweathermap.org/img/wn/${res.weather[0].icon}@2x.png"></div>
     <h2>${res.name}, ${res.sys.country}, ${res.weather[0].description}</h2>
