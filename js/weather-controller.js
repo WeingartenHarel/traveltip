@@ -2,10 +2,10 @@
  
 import { weatherService } from './weather-service.js';
 import { mapControler } from './map-controller.js';
-import { weatherService } from '/weather-service.js';
-import { mapControler } from '/map-controller.js';
-import { weatherService } from './traveltip/js/weather-service.js';
-import { mapControler } from './traveltip/js/map-controller.js';
+// import { weatherService } from '/weather-service.js';
+// import { mapControler } from '/map-controller.js';
+// import { weatherService } from './traveltip/js/weather-service.js';
+// import { mapControler } from './traveltip/js/map-controller.js';
 
 
 onInit();
