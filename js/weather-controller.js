@@ -1,7 +1,7 @@
 'use strict';
 
-import { weatherService } from '/weather-service.js';
-import { mapControler } from '/mapController.js';
+import { weatherService } from './weather-service.js';
+import { mapControler } from './mapController.js';
 
 
 onInit();
